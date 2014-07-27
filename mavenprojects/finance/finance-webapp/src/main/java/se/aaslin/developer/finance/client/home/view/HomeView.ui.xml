@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
+	<ui:style>
+		
+	</ui:style>
+
+	<g:HTMLPanel>
+		<div id="home-content">
+			<ul id="services">
+				<li class="item-1">
+					<h3>Finance</h3>
+					<p>Phasellus convallis consectetur ultricies. Aenean magna odio, mattis eu porttitor rhoncus, posuere et dui. In augue justo, bibendum nec aliquam vel,
+						lacinia et eros.</p>
+					<p class="continue">
+						<g:Hyperlink text="Finance" ui:field="finance"/>
+					</p>
+				</li>
+				<li class="item-2 last-row-item">
+					<h3>Management</h3>
+					<p>Phasellus convallis consectetur ultricies. Aenean magna odio, mattis eu porttitor rhoncus, posuere et dui. In augue justo, bibendum nec aliquam vel,
+						lacinia et eros.</p>
+					<p class="continue">
+						<g:Hyperlink text="Management" ui:field="management"/>
+					</p>
+				</li>
+			
+				<li class="item-4">
+					<h3>Account</h3>
+					<p>Phasellus convallis consectetur ultricies. Aenean magna odio, mattis eu porttitor rhoncus, posuere et dui. In augue justo, bibendum nec aliquam vel,
+						lacinia et eros. </p>
+					<p class="continue">
+						<g:Hyperlink text="Account" ui:field="account"/>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</g:HTMLPanel>
+
+</ui:UiBinder>

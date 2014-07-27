@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="web">
+	<inherits name="com.google.gwt.user.User" />
+	<inherits name="com.google.gwt.resources.Resources" />
+	<inherits name="com.google.gwt.activity.Activity" />
+	<inherits name="org.fusesource.restygwt.RestyGWT" />
+	<inherits name='com.google.gwt.visualization.Visualization' />
+
+	<inherits name='se.aaslin.developer.finance.shared' />
+
+	<entry-point class="se.aaslin.developer.finance.client.AppEntryPoint" />
+
+	<source path="client" />
+	<source path="shared/dto" />
+</module>

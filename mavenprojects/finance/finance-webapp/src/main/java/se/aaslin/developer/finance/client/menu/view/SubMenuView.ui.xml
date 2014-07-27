@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
+	<ui:style type="se.aaslin.developer.finance.client.menu.view.SubMenuView.Style" field="style">
+		.subNavigation {
+			background: white;
+			float: left;
+			margin-right: 25px;
+		}
+		
+		.hyperlinkStyle {
+			display: block;
+		}
+		
+		.hyperlinkStyle a {
+			color: #252525;
+			text-decoration: none;
+			display: inline;
+			margin-right: 10px;
+		}
+		
+		.subNavigation .title {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 3px;
+			text-transform: uppercase;
+			padding: 5px 0 5px 40px;
+		}
+		
+		.subNavigation .title.finance {
+			background: url(images/service-1.gif) no-repeat;
+		}
+		
+		.subNavigation .title.management {
+			background: url(images/service-2.gif) no-repeat;
+		}
+		
+		.subNavigation .title.account {
+			background: url(images/service-4.gif) no-repeat;
+		}
+		
+		.subNavigation ul {
+			float: left;
+			list-style-type: none;
+		}
+		
+		.subNavigation li {
+			width: 180px;
+			height: 30px;
+			background: #D3D4CE;
+			margin-bottom: 4px;
+			margin-right: 4px;
+		}
+		
+		.subNavigation li:hover {
+			background: #D3D4BF;
+		}
+		
+		.subNavigation li.active {
+			background: #D3D4BF;
+			text-decoration: underline;
+		}
+		
+		.subNavigation ul li a {
+			margin: 5px 0 0 10px;
+			font-size: 14px;
+			color: #252525;
+			float: left;
+			text-decoration: none;
+		}
+		
+		.subNavigation ul li a:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.subNavigation}">
+		<g:Label ui:field="title" styleName="{style.title}" />
+		<g:FlowPanel ui:field="submenu" />
+	</g:HTMLPanel>
+</ui:UiBinder>

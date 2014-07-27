@@ -1,0 +1,602 @@
+@CHARSET "UTF-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+
+body {
+	background: #000;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #252525;
+}
+
+input,textarea,select {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.notext {
+	font-size: 0;
+	line-height: 0;
+	text-indent: -4000px;
+	display: block;
+}
+
+a img {
+	border: 0;
+}
+
+a {
+	color: #9d5f0e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.left,.alignleft {
+	float: left;
+	display: inline;
+}
+
+.right,.alignright {
+	float: right;
+	display: inline;
+}
+
+.cl {
+	font-size: 0;
+	line-height: 0;
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+.al {
+	text-align: left;
+}
+
+.ar {
+	text-align: right;
+}
+
+.ac {
+	text-align: center;
+}
+
+h2 {
+	font-size: 34px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+h2 span {
+	color: #f4d359;
+}
+
+h3 {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+h2,h3,#navigation,#slider-navigation,#footer {
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1#logo {
+	font-size: 0;
+	line-height: 0;
+	width: 216px;
+	height: 90px;
+	float: left;
+}
+
+h1#logo a {
+	display: block;
+	height: 90px;
+	text-indent: -4000px;
+	background: url(images/logo.gif);
+}
+
+.shell {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#header {
+	height: 90px;
+	background: url(images/header.gif);
+}
+
+#navigation {
+	float: right;
+}
+
+#navigation ul {
+	float: left;
+	list-style-type: none;
+	padding-top: 37px;
+	font-size: 14px;
+}
+
+#navigation ul li {
+	float: left;
+	display: inline;
+	height: 21px;
+	background: url(images/nav-border.gif) repeat-y right 0;
+	padding: 0 20px 0 0;
+	margin-right: 20px;
+	position: relative;
+}
+
+#navigation ul li.last {
+	background: transparent;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+#navigation ul li a {
+	float: left;
+	color: #fff;
+	text-decoration: none;
+}
+
+#navigation ul li a em {
+	width: 90px;
+	height: 20px;
+	background: url(images/nav-hover.gif) no-repeat 0 -200px;
+	position: absolute;
+	top: 33px;
+	left: -55px;
+}
+
+#navigation ul li.last a em {
+	left: -45px;
+}
+
+#navigation ul li a span {
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 50%;
+}
+
+#navigation ul li a.hover {
+	color: #f6cb44;
+}
+
+#navigation ul li a.hover em {
+	background-position: 0 0
+}
+
+#slider {
+	height: 298px;
+	background: url(images/slider.gif);
+}
+
+.slides {
+	width: 980px;
+	height: 298px;
+	position: relative;
+	overflow: hidden;
+	color: #b6b6b6;
+}
+
+.slides .jcarousel-clip {
+	width: 980px;
+	height: 298px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slides ul {
+	width: 980px;
+	height: 298px;
+	position: relative;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+.slides ul li {
+	float: left;
+	display: inline;
+	width: 980px;
+	height: 260px;
+	position: relative;
+	overflow: hidden;
+	padding-top: 38px;
+}
+
+.slide-info {
+	float: left;
+	width: 720px;
+	padding-top: 20px;
+}
+
+.slide-info h2 {
+	padding-bottom: 20px;
+}
+
+.slide-info p {
+	padding-bottom: 15px;
+}
+
+.slide-image {
+	float: right;
+	width: 219px;
+	height: 240px;
+}
+
+.image1 {
+	background: url(images/slide-image.png);
+}
+
+#slider-navigation {
+	height: 67px;
+	background: url(images/slider-nav.gif);
+}
+
+#slider-navigation ul {
+	list-style-type: none;
+	position: relative;
+	width: 1003px;
+	margin-right: -23px;
+	height: 67px;
+}
+
+#slider-navigation ul li {
+	float: left;
+	display: inline;
+	position: relative;
+	margin: -35px 95px -22px 0;
+}
+
+#slider-navigation ul li.last {
+	margin-right: 0;
+}
+
+#slider-navigation ul li a {
+	float: left;
+	width: 171px;
+	height: 79px;
+	background: url(images/slide-button.png) no-repeat 0 0;
+	position: relative;
+	left: -10px;
+	color: #686767;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 45px 0 0 100px;
+}
+
+#slider-navigation ul li a strong {
+	display: block;
+	font-size: 23px;
+	line-height: 23px;
+	color: #fff;
+}
+
+#slider-navigation ul li a em {
+	position: absolute;
+	top: 43px;
+	left: 20px;
+}
+
+#slider-navigation ul li a em.ico1 {
+	width: 58px;
+	height: 59px;
+	background: url(images/ico1.png);
+	left: 28px;
+}
+
+#slider-navigation ul li a em.ico2 {
+	width: 41px;
+	height: 61px;
+	background: url(images/ico2.png);
+	left: 36px;
+}
+
+#slider-navigation ul li a em.ico3 {
+	width: 71px;
+	height: 64px;
+	background: url(images/ico3.png)
+}
+
+#slider-navigation ul li a.active,#slider-navigation ul li a:hover {
+	background: url(images/slide-button-active.png);
+	color: #a6a6a6;
+}
+
+#slider-navigation ul li a.active strong,#slider-navigation ul li a:hover strong
+	{
+	color: #000;
+}
+
+#main {
+	width: 100%;
+	background: white;
+	padding: 50px 0;
+}
+
+#main h3 {
+	padding-bottom: 10px;
+}
+
+#main p {
+	padding-bottom: 15px;
+}
+
+a.more {
+	font-size: 10px;
+	background: url(images/more.gif) no-repeat 0 center;
+	padding-left: 10px;
+}
+
+.cols {
+	
+}
+
+.col {
+	float: left;
+	width: 250px;
+	margin-right: 115px;
+}
+
+.col-last {
+	margin-right: 0;
+}
+
+#footer {
+	height: 92px;
+	background: url(images/footer.gif);
+	color: #6d6d6d;
+}
+
+#footer .shell {
+	padding-top: 28px;
+}
+
+#footer .right {
+	white-space: nowrap;
+	font-size: 14px;
+	text-align: right;
+}
+
+#footer .right span {
+	padding: 0 1px;
+}
+
+#footer .right a {
+	text-decoration: none;
+	color: #939393;
+}
+
+#footer .right a:hover {
+	color: #f6cb44;
+}
+
+.footer-logo {
+	float: left;
+	width: 169px;
+	height: 34px;
+	background: url(images/footer-logo.gif);
+}
+
+/* Home */
+#home-content {
+	width: 615px;
+	float: left;
+	padding: 25px 0 0 0;
+}
+
+#home-content #services li {
+	list-style: none;
+	float: left;
+	width: 270px;
+	margin: 0 60px 30px 0;
+}
+
+#home-content #services li.last-row-item {
+	margin-right: 0;
+}
+
+#home-content #services li h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+	padding: 5px 0 15px 45px;
+}
+
+#home-content #services li p {
+	font-size: 14px;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+
+#home-content #services li.item-1 h3 {
+	background: url(images/service-1.gif) no-repeat;
+}
+
+#home-content #services li.item-2 h3 {
+	background: url(images/service-2.gif) no-repeat;
+}
+
+#home-content #services li.item-3 h3 {
+	background: url(images/service-3.gif) no-repeat;
+}
+
+#home-content #services li.item-4 h3 {
+	background: url(images/service-4.gif) no-repeat;
+}
+
+/* Generic crud table */
+.gwt_crudTable {
+	border: 2px solid #2A676B;
+	border-spacing: 0px;
+}
+
+.gwt_crudTable_header {
+	border-bottom: 2px solid #6F7277;
+	padding: 3px 15px;
+	text-align: left;
+	color: #252525;
+	text-shadow: #A5CED1 1px 1px 0;
+	overflow: hidden;
+}
+
+.gwt_crudTable_rowHover {
+	background: #A5CED1 !important;
+}
+
+.gwt_crudTable_even {
+	background: #f9f9f9;
+}
+
+.gwt_crudTable_odd {
+	
+}
+
+.gwt_crudTable_cell {
+	padding: 3px 15px;
+}
+
+.gwt_crudTable_cell_content {
+	
+}
+
+.gwt_crudTable_cell_content-up,.gwt_crudTable_cell_content-up-hovering,.gwt_crudTable_cell_content-down-hovering {
+	background: transparent url(images/remove.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+/* GWT Components */
+.gwt-DatePicker {
+	border: 1px solid #ccc;
+	border-top: 1px solid #999;
+	cursor: default;
+}
+
+.gwt-DatePicker td,.datePickerMonthSelector td:focus {
+	outline: none;
+}
+
+.datePickerMonthSelector td:focus {
+	outline: none;
+}
+
+.datePickerDays {
+	width: 100%;
+	background: white;
+}
+
+.datePickerDay,.datePickerWeekdayLabel,.datePickerWeekendLabel {
+	font-size: 85%;
+	text-align: center;
+	padding: 4px;
+	outline: none;
+	font-weight: bold;
+	color: #333;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #EDEDED;
+}
+
+.datePickerWeekdayLabel,.datePickerWeekendLabel {
+	background: #fff;
+	padding: 0px 4px 2px;
+	cursor: default;
+	color: #666;
+	font-size: 70%;
+	font-weight: normal;
+}
+
+.datePickerDay {
+	padding: 4px 7px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.datePickerDayIsWeekend {
+	background: #f7f7f7;
+}
+
+.datePickerDayIsFiller {
+	color: #999;
+	font-weight: normal;
+}
+
+.datePickerDayIsValue {
+	background: #d7dfe8;
+}
+
+.datePickerDayIsDisabled {
+	color: #AAAAAA;
+	font-style: italic;
+}
+
+.datePickerDayIsHighlighted {
+	background: #F0E68C;
+}
+
+.datePickerDayIsValueAndHighlighted {
+	background: #d7dfe8;
+}
+
+.datePickerDayIsToday {
+	padding: 3px;
+	color: #fff;
+	background: url(images/hborder.png) repeat-x 0px -2607px;
+}
+
+.datePickerMonthSelector {
+	width: 100%;
+	padding: 1px 0 5px 0;
+	background: #fff;
+}
+
+.datePickerPreviousButton,.datePickerNextButton {
+	font-size: 120%;
+	line-height: 1em;
+	color: #3a6aad;
+	cursor: hand;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 0px 4px;
+	outline: none;
+}
+
+td.datePickerMonth {
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 100%;
+	font-weight: bold;
+	color: #333;
+}
+
+.gwt-DateBox {
+	border: 1px solid #ccc;
+	border-top: 1px solid #999;
+}
+
+.gwt-DateBox input {
+	width: 8em;
+}
+
+.dateBoxFormatError {
+	background: #ffcccc;
+}
+
+.dateBoxPopup {
+	
+}

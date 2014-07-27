@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
+
+	<g:HTMLPanel>
+
+		<!-- Header -->
+		<div id="header">
+			<div class="shell">
+				<h1 id="logo">
+					<a href="#">Finance</a>
+				</h1>
+
+				<div id="navigation">
+					<g:SimplePanel styleName="menuWrapper" ui:field="menu" />
+				</div>
+			</div>
+		</div>
+		<!-- End Header -->
+
+		<!-- Main -->
+		<div id="main">
+			<div class="shell">
+				<g:SimplePanel styleName="leftWrapper" ui:field="left" />
+				<g:SimplePanel styleName="topWrapper" ui:field="top" />
+				<g:SimplePanel styleName="centerWrapper" ui:field="center" />
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<!-- End Main -->
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="shell">
+
+				<!-- Footer Logo -->
+				<a href="#" class="notext footer-logo">Finance</a>
+				<!-- End Footer -->
+			</div>
+		</div>
+		<!-- End Footer -->
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c='urn:import:com.google.gwt.user.cellview.client'
+	xmlns:common="urn:import:se.aaslin.developer.finance.client.common.widget" xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+
+	</ui:style>
+
+	<g:HTMLPanel>
+		<g:VerticalPanel ui:field="datePanel" />
+		<g:FormPanel ui:field="uploadForm">
+			<g:HTMLPanel>
+				<g:Grid>
+					<g:row>
+						<g:customCell>
+							<g:FileUpload ui:field="fileUpload" title="Välj fil" name="file" />
+						</g:customCell>
+						<g:customCell>
+							<g:Image ui:field="spinner" visible="false" />
+						</g:customCell>
+						<g:customCell>
+							<g:Label ui:field="message" visible="false" />
+						</g:customCell>
+					</g:row>
+				</g:Grid>
+				<g:Button ui:field='uploadButton' text="Upload" />
+
+				<common:HiddenInput ui:field="year" name="year" />
+				<common:HiddenInput ui:field="month" name="month" />
+			</g:HTMLPanel>
+		</g:FormPanel>
+	</g:HTMLPanel>
+
+</ui:UiBinder>
